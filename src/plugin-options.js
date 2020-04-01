@@ -42,7 +42,7 @@ const optionsSchema = Joi.object().keys({
   }),
   // default plugins passed by gatsby
   plugins: Joi.array(),
-  httpsAgent: Joi.object().unknown(),
+  httpsAgent: Joi.string(),
 })
 
 const maskedFields = [`accessToken`, `spaceId`]
